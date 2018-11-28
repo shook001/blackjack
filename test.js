@@ -13,9 +13,9 @@ var _dealer = new dealer('Dealer');
 
 function buildDeck() {
     _deck = new Deck();
-    /*for (i = 0; i < 7; i++) {
+    for (i = 0; i < 7; i++) {
         _deck.cards = _deck.cards.concat(new Deck().cards);
-    }*/
+    }
 }
 
 function shuffle(deck) {
@@ -53,7 +53,7 @@ buildDeck();
 for (let i = 0; i < _players.length; i++) _players[i].anteUp( _ante )
 _deck = shuffle (_deck);
 
-/*
+
 deal( _deck, _players);
 
 //_dealer.hand.push(new Card('J', 'black', 'spade'));
@@ -79,7 +79,9 @@ for (let i = 0; i < 4; i ++) {
     console.log( '              ', _players[i].evaluate( _dealer.upCard()), _players[i].bettingBox,
                                     _players[i].money, _players[i].hasInsurance );
 }
-*/
+
+/*
 for (let i=0; i < _deck.cards.length; i++){
     console.log( i, _deck.cards[i].suit, _deck.cards[i].value );
 }
+*/
